@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block left-title %}
+    Why I did this?
+{% endblock %}
+
+{% block right-content %}
+    <p>While I was working at Metamax, a pharmaceutical industry, we faced this problem,
+    our team was only one designer and three web developers.</p>
+
+    <p>One day, our CEO said "hey!, I want a cool html signature for our corporate email", 
+    but we were busy those days, he wanted this to be done for yerterday, as well as the new
+    website, some bug correction in the internal systems and some other new features.</p>
+
+    <p>Our designer did the mockup for the signature and I wrote the needed html for that and
+    then... we kept it until we had time to generate each signature, the CEO was pushing it
+    we had tight deadlines for that sprint and it was 60 employees here in Venezuela and another
+    20 in Miami.</p>
+
+    <p>So, one day I got tired of the boss going down to IT asking "when can we have the
+    email signatures?", I told him "go ask Human Resources to fill a Google Spreadsheet with the
+    data". While that was happening I tunrned the html I wrote before into a Jinja2 Template and
+    wrote a small Python script to read the data from Google Docs, build the email signature
+    for every employee and send it by email so everybody can use it.</p>
+
+    <p>And that was it, everybody was happy. This script solved the same problem for a couple
+    of friends in other companies so I decided to build an app around it and see if it could help
+    anybody else.</p>
+
+    <p>Greetings from Caracas - Venezuela!</p>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block left-title %}
+    How does this works?
+{% endblock %}
+
+{% block right-content %}
+    <p>Well, everybody has a Google Account, so, if you have a Google Account, 
+    you have access to a wonderfull tool called Google Docs, which has Google Spreadsheets</p>
+
+    <p>If you have a clever development team, they'll be used to work with template languages
+    for building you amazing web site or web tools, so, if you already have the html for your
+    email template, all you need to do is ask them to turn them into a Jinja2 Template to make
+    it compatible with this app (I'll be adding more template languages soon). Then you'll need to
+    prepare a Google Spreadsheet with the data, on the header you'll write the field names and they
+    must match with the name in the template.</p>
+
+    <p>Once you have the Jinja2 Template and your Google Spreadsheet all you need to do is upload
+    your template and link this app with your Google Account through the "Google Login" button.</p>
+
+    <p>Done!, that's it, all your employees will receive an email with a link to copy and paste their
+    personalized html email signature. I won't and will never store or try to stole your employees data,
+    privacy matters and I will never send them or send you spam.</p>
+
+    <p>If you have any doubt or need help, you can always send me an email or if you don't want to
+    link this app to a spreadsheet with all your employees information, you can always fork me on github
+    and implement something similar in yout office or company</p>
+{% endblock %}
