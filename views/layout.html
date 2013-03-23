@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email Template Generator</title>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <header class="header" style="background-color: gray;">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <div class="content">
+                        <a href="#" class="brand">Logo</a>
+                        <ul class="nav">
+                            <li class="active"><a href="#what">What?</a></li>
+                            <li><a href="#why">Why?</a></li>
+                            <li><a href="#how">How?</a></li>
+                            <li><a href="#who">Who?</a></li>
+                            <li><a href="#app">Ok!, let's do this</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="what" class="container">
+            <div class="row">
+                <div class="span4">
+                    <h1>What's this?</h1>
+                </div>
+
+                <div class="span8 content">
+                    <p>Oh!. Hi!, and welcome!, this is simply a personalized email html template generator</p>
+
+                    <p>Yes, i know, but don't get too excited about this, this thing doesn't generate the html
+                    for you, it just fills it with data. Does your company has a lot of employees, only one designer
+                    and a very busy development team?, well, don't waste their time generating hundreds of html signatures,
+                    just make them generate a Jinja2 html template and we can do the rest for you.</p>
+
+                    <p>Sounds pretty cool huh?, well, it is and it just works.</p>
+                </div>
+            </div>
+        </section>
+        <section id="why" class="container">
+            <div class="row">
+
+                <div id="left-title" class="span4" style="display:table;">
+                    <h1 style="display:table-cell;vertical-align:middle;">Why I did this?</h1>
+                </div>
+                
+                <div id="right-content" class="span8">
+                    <p>While I was working at Metamax, a pharmaceutical industry, we faced this problem,
+                    our team was only one designer and three web developers.</p>
+                
+                    <p>One day, our CEO said "hey!, I want a cool html signature for our corporate email", 
+                    but we were busy those days, he wanted this to be done for yerterday, as well as the new
+                    website, some bug correction in the internal systems and some other new features.</p>
+                
+                    <p>Our designer did the mockup for the signature and I wrote the needed html for that and
+                    then... we kept it until we had time to generate each signature, the CEO was pushing it
+                    we had tight deadlines for that sprint and it was 60 employees here in Venezuela and another
+                    20 in Miami.</p>
+                
+                    <p>So, one day I got tired of the boss going down to IT asking "when can we have the
+                    email signatures?", I told him "go ask Human Resources to fill a Google Spreadsheet with the
+                    data". While that was happening I tunrned the html I wrote before into a Jinja2 Template and
+                    wrote a small Python script to read the data from Google Docs, build the email signature
+                    for every employee and send it by email so everybody can use it.</p>
+                
+                    <p>And that was it, everybody was happy. This script solved the same problem for a couple
+                    of friends in other companies so I decided to build an app around it and see if it could help
+                    anybody else.</p>
+                
+                    <p>Greetings from Caracas - Venezuela!</p>
+                </div>
+            </div>
+        </section>
+        <section id="how" class="container">
+
+            <div class="row">
+                <div class="span4">
+                    <h1>How does this works?</h1>
+                </div>
+                
+                <div class="span8 content">
+                    <p>Well, everybody has a Google Account, so, if you have a Google Account, 
+                    you have access to a wonderfull tool called Google Docs, which has Google Spreadsheets</p>
+                
+                    <p>If you have a clever development team, they'll be used to work with template languages
+                    for building you amazing web site or web tools, so, if you already have the html for your
+                    email template, all you need to do is ask them to turn them into a Jinja2 Template to make
+                    it compatible with this app (I'll be adding more template languages soon). Then you'll need to
+                    prepare a Google Spreadsheet with the data, on the header you'll write the field names and they
+                    must match with the name in the template.</p>
+                
+                    <p>Once you have the Jinja2 Template and your Google Spreadsheet all you need to do is upload
+                    your template and link this app with your Google Account through the "Google Login" button.</p>
+                
+                    <p>Done!, that's it, all your employees will receive an email with a link to copy and paste their
+                    personalized html email signature. I won't and will never store or try to stole your employees data,
+                    privacy matters and I will never send them or send you spam.</p>
+                
+                    <p>If you have any doubt or need help, you can always send me an email or if you don't want to
+                    link this app to a spreadsheet with all your employees information, you can always fork me on github
+                    and implement something similar in yout office or company</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <p align="center">This is and will be free and open source software</p>
+                <p align="center">Feel free to fork me on GitHub</p>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#left-title').height($('#right-content').height());
+            });
+        </script>
+    </body>
+</html>
