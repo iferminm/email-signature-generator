@@ -3,6 +3,7 @@
     <head>
         <title>Email Template Generator</title>
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="css/appstyles.css" />
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     </head>
@@ -25,9 +26,10 @@
         </header>
         <section class="container">
             <div class="row">
-                <div id="left-title" class="span4" style="display:table;">
+                <div id="left-title" class="span4">
                     <h1 style="display:table-cell;vertical-align:middle;">
                         {% block left-title %}
+
                         {% endblock %}
                     </h1>
                 </div>
@@ -41,8 +43,8 @@
         </section>
         <footer>
             <div class="footer">
-                <p align="center">This is and will be free and open source software</p>
-                <p align="center">Feel free to fork me on GitHub</p>
+                <p align="center">This is and will be free and open source software.
+                Feel free to fork me on GitHub</p>
             </div>
         </footer>
         <script type="text/javascript">
